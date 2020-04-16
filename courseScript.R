@@ -414,10 +414,19 @@ par()
 ### Graphs Exercise
 
 # 1. get familiar with "rivers" - how many observations?
+?rivers #141
 # 2. plot rivers against its index (hint: number of observation on x)
-# 3. add: header (red), label names
-# 4. change the point symbol and point color
+x = 1:141
+y = rivers
 
+plot(x,y)
+# 3. add: header (red), label names
+text(34, 18, "Lengths in miles", cex=0.85)
+plot(lynx, type="p", main="Lengths of Major N. American Rivers")
+
+
+# 4. change the point symbol and point color
+plot(lynx, type="p", main="Lengths of Major N. American Rivers",pch = 5, col="green")
 ## Solution
 
 ?rivers # 141 observations
